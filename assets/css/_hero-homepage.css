@@ -1,0 +1,61 @@
+/* Homepage - hero section and Summit Short LP - hero */
+#hero-homepage {
+  position: relative;
+}
+
+#hero-homepage figure.wp-block-image,
+#hero-homepage figure.wp-block-image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 36%;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-homepage #hero-content-left {
+    padding-top: 140px !important;
+  }
+}
+@media only screen and (max-width: 782px) {
+  #hero-image-right {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  #hero-homepage {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 743px) and (max-width: 781px) {
+  #hero-homepage #hero-content-left {
+    padding-top: 140px !important;
+  }
+}
+@media only screen and (min-width: 782px) {
+  #hero-image-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 45%;
+    bottom: 0;
+  }
+  #hero-content-left {
+    padding-right: var(--wp--preset--spacing--medium);
+  }
+  #hero-homepage #hero-content-left {
+    padding-top: 200px !important;
+  }
+
+  #background-colored::before {
+    content: "";
+    height: 100%;
+    width: 43%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--wp--preset--color--contrast);
+    z-index: 1;
+  }
+  #hero-content-left {
+    z-index: 2;
+  }
+}

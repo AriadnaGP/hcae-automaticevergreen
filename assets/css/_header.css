@@ -1,0 +1,8 @@
+/* Styles for Footer and elements inside it */
+
+body.page-template-wp-custom-template-header-over-main header {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  background-color: transparent;
+}

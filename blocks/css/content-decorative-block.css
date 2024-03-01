@@ -1,0 +1,29 @@
+.decorative-block {
+  position: relative;
+  overflow: unset;
+  margin: 0;
+}
+
+.decorative-block .decoration {
+  position: absolute;
+  z-index: 10;
+}
+
+.decorative-block .decoration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.decorative-block.aligncenter .decorative-content-wrap {
+  text-align: center;
+}
+
+svg {
+  overflow: visible;
+}
+
+@media only screen and (max-width: 1024px) {
+  .decorative-block .decoration {
+    display: none;
+  }
+}

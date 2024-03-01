@@ -1,0 +1,217 @@
+.slider-block {
+  margin-top: 0;
+}
+.slider-wrap .slider-content .overlay-background {
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  right: 0;
+  left: 0;
+}
+
+.slider-block .slider-wrap .slider-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 100vh;
+}
+.slider-block .slider-wrap .slider-content .content-wrap {
+  padding-bottom: 50px;
+}
+
+.slider-block .slider-wrap .slider-content .content-wrap .slider-text {
+  float: right;
+}
+.slider-block
+  .slider-wrap
+  .slider-content
+  .content-wrap
+  .slider-text
+  .title-slider {
+  margin-bottom: 16px;
+}
+.slider-block .slider-text {
+  width: 100%;
+  z-index: 9;
+  position: relative;
+}
+.slider-block .slider-text p {
+  color: var(--Dark, #333);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 150%;
+}
+
+.slider-block .slider-image img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.slider-block .slider-content .video-wrapper {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-block .slider-content .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-block .slider-content .video-wrapper .embed-container {
+  position: relative;
+  overflow: hidden;
+  padding: 55%;
+  max-width: 100%;
+}
+
+.slider-block .slider-content .content-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.slider-block .slider-nav .slick-slide {
+  position: relative;
+}
+
+.slider-block .slider-nav .slick-slide .button-text {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  min-height: 120px;
+  border-radius: 22px;
+  position: relative;
+  cursor: pointer;
+}
+.slider-block .slider-nav .slick-slide .button-text .overlay-background_button {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+}
+.slider-block .slider-nav .slick-slide .button-text h6 {
+  margin: 16px;
+  z-index: 9;
+}
+.slider-block .slider-nav .slick-slide .button-text h6::after {
+  content: "";
+  border-radius: 40px;
+  background: #ff5b41;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin-top: 8px;
+}
+.slider-block .slider-nav .slick-current .button-text h6::after {
+  background: #333;
+}
+.slider-block .slider-nav .slick-list {
+  margin: 0 20px;
+  padding: 0 !important;
+}
+
+.slider-block .slider-nav .slick-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-block .slick-prev:before,
+.slider-block .slick-next:before {
+  color: black;
+}
+
+.main .slick-slider .slider-image {
+  height: 720px;
+}
+
+.slider-block.main .slider-nav {
+  margin-top: 0 !important;
+}
+
+.slider-block {
+  position: relative;
+}
+.slider-block .slider-nav {
+  width: 100%;
+  max-width: 1200px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 670px) {
+  .slider-block .slider-text {
+    width: 48%;
+    max-width: 488px;
+  }
+  .slider-block .slider-wrap .slider-content {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .slider-block .slider-wrap .slider-content .content-wrap {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 175px;
+    padding-bottom: 247px;
+  }
+}
+
+@media only screen and (max-width: 669px) {
+  .slider-block .slider-wrap .slider-content .content-wrap .slider-text {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .slider-block .slider-wrap .slider-content {
+    background-position: 30% center !important;
+  }
+  .slider-block .slider-wrap .slider-content .content-wrap {
+    padding: 200px 0;
+  }
+
+  .slider-block .slider-content .video-wrapper .embed-container {
+    height: 71vh;
+    width: 130vh;
+    padding: 0;
+    max-width: none;
+  }
+  .slider-block .slider-content .video-wrapper .embed-container iframe {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (min-width: 670px) and (max-width: 780px) {
+  .slider-block .slider-content .video-wrapper .embed-container {
+    height: 71vh;
+    width: 150vh;
+    padding: 0;
+    max-width: none;
+  }
+}
+@media only screen and (min-width: 78px) and (max-width: 1400px) {
+  .slider-block .slider-content .video-wrapper .embed-container {
+    height: 100vh;
+    width: 250vh;
+    padding: 0;
+    max-width: none;
+  }
+}

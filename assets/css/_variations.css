@@ -1,0 +1,184 @@
+/* styles for all registered style blocks */
+/* LISTS */
+
+/* <ul> List
+--------------------------------------------- */
+ul.is-style-check-list,
+.single-post .wp-block-post-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul.is-style-check-list li,
+.single-post .wp-block-post-content ul li {
+  padding-left: 55px;
+  position: relative;
+  margin-bottom: 16px;
+  line-height: 36px;
+  font-size: 18px;
+}
+ul.is-style-check-list li::before,
+.single-post .wp-block-post-content ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 8px;
+  background-color: var(--wp--preset--color--outline);
+  border: 1px solid var(--wp--preset--color--contrast);
+  color: var(--wp--preset--color--contrast);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* <ol> List
+--------------------------------------------- */
+ol.is-style-numbered-list,
+ul.is-style-numbered-list,
+.single-post .wp-block-post-content ol {
+  list-style-type: none;
+  counter-reset: my-counter;
+  padding-left: 0;
+}
+
+ol.is-style-numbered-list li,
+ul.is-style-numbered-list li,
+.single-post .wp-block-post-content ol li {
+  position: relative;
+  counter-increment: my-counter;
+  padding-left: 55px;
+  margin-bottom: 16px;
+  line-height: 36px;
+  font-size: 18px;
+}
+
+ol.is-style-numbered-list li:before,
+ul.is-style-numbered-list li:before,
+.single-post .wp-block-post-content ol li::before {
+  content: counter(my-counter);
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 600;
+  padding: 8px;
+  background-color: var(--wp--preset--color--outline);
+  border: 1px solid var(--wp--preset--color--contrast);
+  color: var(--wp--preset--color--contrast);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Font Awesome Icons with shapes colored 
+--------------------------------------------- */
+.fa-contrast-background,
+.fa-dark-oval-shape,
+.fa-base-background,
+.fa-round-shape-contrast-background,
+.fa-green-oval-shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.fa-dark-oval-shape {
+  height: 42px;
+  min-width: 82px;
+}
+.fa-green-oval-shape {
+  height: 48px;
+  min-width: 82px;
+}
+.fa-base-background,
+.fa-round-shape-contrast-background {
+  height: 64px;
+}
+.fa-contrast-background::after {
+  content: "";
+  color: var(--wp--preset--color--base);
+  padding: 19px;
+  display: block;
+  text-align: center;
+  width: 50px;
+  height: 56px;
+  background-color: var(--wp--preset--color--contrast);
+  border-radius: 25px;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 1;
+}
+.fa-base-background::after {
+  content: "";
+  color: var(--wp--preset--color--contrast);
+  padding: 32px;
+  display: block;
+  text-align: center;
+  background-color: var(--wp--preset--color--base);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.fa-round-shape-contrast-background::after {
+  content: "";
+  padding: 32px;
+  display: block;
+  text-align: center;
+  background-color: var(--wp--preset--color--contrast);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+.fa-contrast-background::before,
+.fa-dark-oval-shape::before,
+.fa-base-background::before,
+.fa-round-shape-contrast-background::before,
+.fa-green-oval-shape::before {
+  z-index: 2;
+}
+.fa-dark-oval-shape::before {
+  color: var(--wp--preset--color--base);
+}
+.fa-green-oval-shape::before {
+  color: var(--wp--preset--color--contrast);
+}
+.fa-round-shape-contrast-background::before {
+  color: var(--wp--preset--color--neutral);
+}
+.fa-dark-oval-shape::after {
+  content: "";
+  background: var(--wp--preset--color--contrast);
+  padding: 24px 40px;
+  border-radius: 60px;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  text-align: center;
+}
+.fa-green-oval-shape::after {
+  content: "";
+  background: var(--wp--preset--color--primary);
+  padding: 21px 42px;
+  border-radius: 60px;
+  border: 4px solid var(--wp--preset--color--base);
+  position: absolute;
+  z-index: 1;
+  display: block;
+  text-align: center;
+}
+i.fa-gray-light-background {
+  background: var(--wp--preset--color--neutral);
+  padding: 15px 32px;
+  border-radius: 32px;
+}
