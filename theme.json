@@ -52,17 +52,26 @@
 				{
 					"name": "Black and White",
 					"slug": "black-and-white",
-					"colors": [ "#000000", "#ffffff" ]
+					"colors": [
+						"#000000",
+						"#ffffff"
+					]
 				},
 				{
 					"name": "Primary and White",
 					"slug": "primary-and-white",
-					"colors": [ "#0000ff", "#ffffff" ]
+					"colors": [
+						"#0000ff",
+						"#ffffff"
+					]
 				},
 				{
 					"name": "Secondary and White",
 					"slug": "secondary-and-white",
-					"colors": [ "#000099", "#ffffff" ]
+					"colors": [
+						"#000099",
+						"#ffffff"
+					]
 				}
 			],
 			"gradients": [
@@ -89,12 +98,12 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#2051A1",
+					"color": "#20517",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#648FC9",
+					"color": "#648FC8",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
@@ -203,7 +212,9 @@
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "100 900",
-							"src": [ "file:./assets/fonts/Outfit-Variable.woff2" ]
+							"src": [
+								"file:./assets/fonts/Outfit-Variable.woff2"
+							]
 						}
 					]
 				},
@@ -302,13 +313,12 @@
 		"blocks": {
 			"core/button": {
 				"variations": {
-					"outline" : {
+					"outline": {
 						"border": {
 							"color": "currentColor",
 							"style": "solid",
 							"width": "2px"
 						},
-
 						"spacing": {
 							"padding": {
 								"top": "18px",
