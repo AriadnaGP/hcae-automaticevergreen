@@ -93,17 +93,17 @@
 					"slug": "black"
 				},
 				{
-					"color": "#112E7E",
+					"color": "#0A3026",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#20517",
+					"color": "#5AC566",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#648FC8",
+					"color": "#FBE753",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
@@ -113,7 +113,7 @@
 					"slug": "neutral"
 				},
 				{
-					"color": "#C5D8EC",
+					"color": "#EDF5EB",
 					"name": "Light",
 					"slug": "light"
 				}
