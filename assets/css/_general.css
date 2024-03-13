@@ -273,3 +273,63 @@
 .wp-block-image.vertical-middle-icon img {
   vertical-align: middle;
 }
+
+
+
+i.fa-background-drawn {
+  background-image: url(../images/automatic-evergreen-dark-green-drawn.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i.fa-background-drawn::before {
+
+  font-size: 28px;
+}
+
+/*
+h2.is-style-green-wave-medium ::before {
+  position: relative;
+
+}
+
+h2.is-style-green-wave-small ::before,
+h2.is-style-green-wave-medium ::before,
+h2.is-style-green-wave-large ::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  display: block;
+  width: 100%;
+  height: 28px;
+  left: 0;
+  right: 0;
+  background-image: url(../images/automatic-evergreen-green-wave-medium.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+*/
+
+
+i.fa-parallelogram {
+  width: 31px;
+  min-width: 31px;
+  height: 24px;
+  transform: skew(-20deg);
+  background: var(--wp--preset--color--primary);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wp--preset--color--base);
+}
