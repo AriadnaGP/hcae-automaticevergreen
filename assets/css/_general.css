@@ -46,6 +46,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .page-numbers {
   color: var(--wp--preset--color--contrast);
   font-size: 18px;
@@ -56,9 +57,11 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .page-numbers.current {
   color: var(--wp--preset--color--primary);
 }
+
 .wp-block-query-pagination-numbers {
   gap: 24px;
   display: flex;
@@ -76,12 +79,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    17,
-    46,
-    126,
-    0.5
-  ); /* Adjust the overlay color and opacity */
+  background-color: rgba(17,
+      46,
+      126,
+      0.5);
+  /* Adjust the overlay color and opacity */
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 40px;
@@ -142,11 +144,7 @@
   font-weight: 400;
 }
 
-.gutena-accordion-block
-  > .gutena-accordion-block__panel.active
-  > .gutena-accordion-block__panel-title
-  > .gutena-accordion-block__panel-title-inner
-  > .trigger-up-down::after {
+.gutena-accordion-block>.gutena-accordion-block__panel.active>.gutena-accordion-block__panel-title>.gutena-accordion-block__panel-title-inner>.trigger-up-down::after {
   content: "\f078";
   font-family: "Font Awesome 6 Pro";
   color: var(--wp--preset--color--neutral);
@@ -155,11 +153,7 @@
   font-weight: 400;
 }
 
-.gutena-accordion-block
-  > .gutena-accordion-block__panel
-  > .gutena-accordion-block__panel-title
-  > .gutena-accordion-block__panel-title-inner
-  > .trigger-up-down {
+.gutena-accordion-block>.gutena-accordion-block__panel>.gutena-accordion-block__panel-title>.gutena-accordion-block__panel-title-inner>.trigger-up-down {
   position: relative;
   height: 56px;
   width: 56px;
@@ -175,27 +169,20 @@
   display: none !important;
 }
 
-.wp-block-gutena-accordion-panel-title:hover
-  .gutena-accordion-block__panel-title-inner
-  h6 {
+.wp-block-gutena-accordion-panel-title:hover .gutena-accordion-block__panel-title-inner h6 {
   text-decoration: underline;
 }
 
-.wp-block-gutena-accordion-panel-title:hover
-  .gutena-accordion-block__panel-title-inner
-  .trigger-up-down::before {
+.wp-block-gutena-accordion-panel-title:hover .gutena-accordion-block__panel-title-inner .trigger-up-down::before {
   background-color: var(--wp--preset--color--secondary);
 }
-.wp-block-gutena-accordion-panel-title:hover
-  .gutena-accordion-block__panel-title-inner
-  .trigger-up-down::after {
+
+.wp-block-gutena-accordion-panel-title:hover .gutena-accordion-block__panel-title-inner .trigger-up-down::after {
   color: var(--wp--preset--color--base) !important;
 }
 
 @media only screen and (max-width: 780px) {
-  .wp-block-gutena-accordion-panel-title
-    .gutena-accordion-block__panel-title-inner
-    h6 {
+  .wp-block-gutena-accordion-panel-title .gutena-accordion-block__panel-title-inner h6 {
     font-size: var(--wp--preset--font-size--large) !important;
   }
 }
@@ -211,13 +198,16 @@
   margin-top: -40px !important;
   z-index: 2;
 }
+
 #team #position {
   margin-top: -20px !important;
   z-index: 2;
 }
+
 #team-section #team .member figure {
   position: relative;
 }
+
 #team-section #team .member figure::after {
   content: "";
   position: absolute;
@@ -225,53 +215,61 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    315deg,
-    #112e7e 1.06%,
-    rgba(218, 185, 240, 0) 46.28%
-  );
+  background: linear-gradient(315deg,
+      #112e7e 1.06%,
+      rgba(218, 185, 240, 0) 46.28%);
   border-radius: 24px;
 }
+
 #team-section #team .member:hover {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
+
 #team-section #team .member:hover figure::after {
   border-radius: 24px;
-  background: linear-gradient(
-    315deg,
-    #648fc9 1.06%,
-    rgba(90, 197, 102, 0) 46.28%
-  );
+  background: linear-gradient(315deg,
+      #648fc9 1.06%,
+      rgba(90, 197, 102, 0) 46.28%);
   transition: all 0.5s ease-in-out;
 }
+
 #team-section #team .member:hover #name {
   background-color: var(--wp--preset--color--primary) !important;
   transition: all 0.5s ease-in-out;
 }
+
 #team-section #team .member:hover #name h3 {
   color: var(--wp--preset--color--contrast) !important;
   transition: all 0.5s ease-in-out;
 }
+
 #team-section #team .member:hover #position {
   background-color: var(--wp--preset--color--secondary) !important;
   transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 600px) {
-  #team > .wp-block-group.is-vertical {
+  #team>.wp-block-group.is-vertical {
     flex-basis: 100%;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 950px) {
-  #team > .wp-block-group.is-vertical {
+  #team>.wp-block-group.is-vertical {
     flex-basis: calc((100% / 2) - 30px);
   }
 }
 
 @media only screen and (min-width: 951px) {
-  #team > .wp-block-group.is-vertical {
+  #team>.wp-block-group.is-vertical {
     flex-basis: calc((100% / 3) - 30px);
   }
+}
+
+
+/*ari*/
+
+.wp-block-image.vertical-middle-icon img {
+  vertical-align: middle;
 }
