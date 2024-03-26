@@ -8,6 +8,7 @@ ul.is-style-check-list,
   list-style-type: none;
   padding: 0;
 }
+
 ul.is-style-check-list li,
 .single-post .wp-block-post-content ul li {
   padding-left: 55px;
@@ -16,6 +17,7 @@ ul.is-style-check-list li,
   line-height: 36px;
   font-size: 18px;
 }
+
 ul.is-style-check-list li::before,
 .single-post .wp-block-post-content ul li::before {
   content: "\f00c";
@@ -93,18 +95,22 @@ ul.is-style-numbered-list li:before,
   justify-content: center;
   text-align: center;
 }
+
 .fa-dark-oval-shape {
   height: 42px;
   min-width: 82px;
 }
+
 .fa-green-oval-shape {
   height: 48px;
   min-width: 82px;
 }
+
 .fa-base-background,
 .fa-round-shape-contrast-background {
   height: 64px;
 }
+
 .fa-contrast-background::after {
   content: "";
   color: var(--wp--preset--color--base);
@@ -119,6 +125,7 @@ ul.is-style-numbered-list li:before,
   position: absolute;
   z-index: 1;
 }
+
 .fa-base-background::after {
   content: "";
   color: var(--wp--preset--color--contrast);
@@ -130,6 +137,7 @@ ul.is-style-numbered-list li:before,
   position: absolute;
   z-index: 1;
 }
+
 .fa-round-shape-contrast-background::after {
   content: "";
   padding: 32px;
@@ -140,6 +148,7 @@ ul.is-style-numbered-list li:before,
   position: absolute;
   z-index: 1;
 }
+
 .fa-contrast-background::before,
 .fa-dark-oval-shape::before,
 .fa-base-background::before,
@@ -147,15 +156,19 @@ ul.is-style-numbered-list li:before,
 .fa-green-oval-shape::before {
   z-index: 2;
 }
+
 .fa-dark-oval-shape::before {
   color: var(--wp--preset--color--base);
 }
+
 .fa-green-oval-shape::before {
   color: var(--wp--preset--color--contrast);
 }
+
 .fa-round-shape-contrast-background::before {
   color: var(--wp--preset--color--neutral);
 }
+
 .fa-dark-oval-shape::after {
   content: "";
   background: var(--wp--preset--color--contrast);
@@ -166,6 +179,7 @@ ul.is-style-numbered-list li:before,
   display: block;
   text-align: center;
 }
+
 .fa-green-oval-shape::after {
   content: "";
   background: var(--wp--preset--color--primary);
@@ -177,8 +191,56 @@ ul.is-style-numbered-list li:before,
   display: block;
   text-align: center;
 }
+
 i.fa-gray-light-background {
   background: var(--wp--preset--color--neutral);
   padding: 15px 32px;
   border-radius: 32px;
+}
+
+
+
+/* Heading Styles 
+--------------------------------------------- */
+.is-style-green-wave-small,
+.is-style-green-wave-medium,
+.is-style-green-wave-large {
+  position: relative;
+  z-index: 2;
+}
+
+.is-style-green-wave-small mark,
+.is-style-green-wave-medium mark,
+.is-style-green-wave-large mark {
+  background: unset;
+  position: relative;
+}
+
+.is-style-green-wave-small mark::after,
+.is-style-green-wave-medium mark::after,
+.is-style-green-wave-large mark::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  display: block;
+  width: 100%;
+  height: 28px;
+  left: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.is-style-green-wave-small mark::after {
+  background-image: url("../images/automatic-evergreen-green-wave-small.svg");
+}
+
+.is-style-green-wave-medium mark::after {
+  background-image: url("../images/automatic-evergreen-green-wave-medium.svg");
+}
+
+.is-style-green-wave-large mark::after {
+  background-image: url("../images/automatic-evergreen--green-wave-large.svg");
 }

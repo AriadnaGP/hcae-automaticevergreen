@@ -268,14 +268,6 @@
 }
 
 
-/*ari*/
-
-.wp-block-image.vertical-middle-icon img {
-  vertical-align: middle;
-}
-
-
-
 i.fa-background-drawn {
   background-image: url(../images/automatic-evergreen-dark-green-drawn.svg);
   background-repeat: no-repeat;
@@ -293,30 +285,6 @@ i.fa-background-drawn::before {
   font-size: 28px;
 }
 
-/*
-h2.is-style-green-wave-medium ::before {
-  position: relative;
-
-}
-
-h2.is-style-green-wave-small ::before,
-h2.is-style-green-wave-medium ::before,
-h2.is-style-green-wave-large ::before {
-  content: "";
-  position: absolute;
-  bottom: -12px;
-  display: block;
-  width: 100%;
-  height: 28px;
-  left: 0;
-  right: 0;
-  background-image: url(../images/automatic-evergreen-green-wave-medium.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-}
-*/
 
 
 i.fa-parallelogram {
@@ -332,4 +300,54 @@ i.fa-parallelogram {
   align-items: center;
   justify-content: center;
   color: var(--wp--preset--color--base);
+}
+
+.object-fit-inherit img {
+  object-fit: inherit !important;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .wp-block-navigation-item.cta-menu.wp-block-navigation-link a {
+    border: none;
+    background-color: var(--wp--preset--color--secondary);
+    border-radius: 60px;
+    padding: 15px 24px;
+    color: var(--wp--preset--color--contrast);
+    font-size: 16px;
+    font-weight: var(--wp--custom--font-weight--regular);
+  }
+}
+
+.wp-block-navigation-item.cta-menu.wp-block-navigation-link a :hover {
+  color: var(--wp--preset--color--base);
+}
+
+@media only screen and (max-width: 781px) {
+
+  /*what you get middle column style*/
+  .wp-block-column.column-with-border {
+    border-top: 1px solid var(--wp--preset--color--neutral) !important;
+    border-bottom: 1px solid var(--wp--preset--color--neutral) !important;
+  }
+
+  .wp-block-columns.alignwide.mobile-400 {
+    max-width: 400px;
+  }
+
+  .wp-block-group.center-vertical {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body .mobile-400.is-layout-flex {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+  }
+
 }
